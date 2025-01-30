@@ -4,7 +4,7 @@ page 50101 "TIP Chicken Card"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "TIP Chicken";
-    Caption = 'Chicken Card'
+    Caption = 'Chicken Card';
 
     layout
     {
