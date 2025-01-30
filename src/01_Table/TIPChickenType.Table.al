@@ -1,4 +1,4 @@
-table 50101 " TIP Chicken Type"
+table 50101 "TIP Chicken Type"
 {
     Caption = 'Chicken Type';
     DataClassification = ToBeClassified;

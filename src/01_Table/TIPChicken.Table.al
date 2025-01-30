@@ -1,6 +1,6 @@
-table 50100 TIP Chicken
+table 50100 "TIP Chicken"
 {
-    Caption = 'Chicken'
+    Caption = 'Chicken';
     DataClassification = CustomerContent;
 
     fields
@@ -19,7 +19,7 @@ table 50100 TIP Chicken
         {
             DataClassification = CustomerContent;
             Caption = 'Chicken Type Code';
-            TableRelation = "Chicken Type";
+            TableRelation = "TIP Chicken Type";
         }
         field(4; BithDate; Date)
         {
