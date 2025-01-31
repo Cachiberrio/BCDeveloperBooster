@@ -1,4 +1,4 @@
-page 50101 "TIP Chicken Card"
+page 50120 "TIP Chicken Card"
 {
     PageType = Card;
     ApplicationArea = All;
@@ -20,29 +20,33 @@ page 50101 "TIP Chicken Card"
                 {
                     ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
-                field(BithDate; Rec.BithDate)
+                field(ChickenTypeCode; Rec.ChickenTypeCode)
                 {
-                    ToolTip = 'Specifies the value of the Birthdate field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Chicken Type Code field.', Comment = '%';
                 }
-                field(Gender; Rec.Gender)
+                field("Last Date Modified"; Rec."Last Date Modified")
                 {
-                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Last Date Modified field.', Comment = '%';
+                }
+                field("Picture"; Rec."Picture")
+                {
+                    ToolTip = 'Specifies the value of the Picture field.', Comment = '%';
                 }
             }
             group(Additional)
             {
 
+                field(Gender; Rec.Gender)
+                {
+                    ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
+                }
+                field(BithDate; Rec.BithDate)
+                {
+                    ToolTip = 'Specifies the value of the Birthdate field.', Comment = '%';
+                }
                 field(Blocked; Rec.Blocked)
                 {
                     ToolTip = 'Specifies the value of the Blocked field.', Comment = '%';
-                }
-                field(ChickenTypeCode; Rec.ChickenTypeCode)
-                {
-                    ToolTip = 'Specifies the value of the Chicken Type Code field.', Comment = '%';
-                }
-                field(Image; Rec.Image)
-                {
-                    ToolTip = 'Specifies the value of the Image field.', Comment = '%';
                 }
             }
         }

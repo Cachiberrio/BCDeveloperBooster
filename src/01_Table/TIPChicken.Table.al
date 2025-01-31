@@ -37,9 +37,13 @@ table 50100 "TIP Chicken"
             Caption = 'Gender';
             OptionMembers = " ","Male","Female";
         }
-        field(7; "Image"; MediaSet)
+        field(7; "Picture"; MediaSet)
         {
-            Caption = 'Image';
+            Caption = 'Picture';
+            DataClassification = CustomerContent;
+        }
+        field(8; "Last Date Modified"; Date)
+        {
             DataClassification = CustomerContent;
         }
     }
@@ -57,7 +61,7 @@ table 50100 "TIP Chicken"
         fieldgroup(DropDown; Description, ChickenTypeCode)
         {
         }
-        fieldgroup(Brick; Description, Image)
+        fieldgroup(Brick; Description, Picture)
         {
         }
     }

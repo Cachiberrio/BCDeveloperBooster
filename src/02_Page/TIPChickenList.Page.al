@@ -1,10 +1,11 @@
-page 50100 "TIP Chicken List"
+page 50121 "TIP Chicken List"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "TIP Chicken";
     Caption = 'Chicken List';
+    CardPageId = "TIP Chicken Card";
 
     layout
     {
@@ -20,13 +21,9 @@ page 50100 "TIP Chicken List"
                 {
                     ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
-                field(Gender; Rec.Gender)
+                field(ChickenTypeCode; Rec.ChickenTypeCode)
                 {
                     ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
-                }
-                field(Blocked; Rec.Blocked)
-                {
-                    ToolTip = 'Specifies the value of the Blocked field.', Comment = '%';
                 }
             }
         }

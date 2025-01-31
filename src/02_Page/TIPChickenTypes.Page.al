@@ -1,4 +1,4 @@
-page 50102 "TIP Chicken Types"
+page 50122 "TIP Chicken Types"
 {
     PageType = List;
     ApplicationArea = All;
