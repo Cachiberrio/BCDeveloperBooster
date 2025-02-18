@@ -58,6 +58,23 @@ table 50100 "TIP Chicken"
         {
             DataClassification = CustomerContent;
         }
+        field(10; "Date Filter"; Date)
+        {
+            FieldClass = FlowFilter;
+        }
+        field(11; "Egg Type Filter"; code[20])
+        {
+            FieldClass = FlowFilter;
+        }
+        field(12; "Produced Eggs"; Decimal)
+        {
+            Caption = 'Produced Eggs';
+            DecimalPlaces = 0 : 0;
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = sum("TIP Egg Production Line".Quantity where("Chicken No." = field("No."), "Egg Type Code" = field("Egg Type Filter")));
+        }
+
     }
 
     keys

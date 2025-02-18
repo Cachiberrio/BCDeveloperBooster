@@ -28,6 +28,10 @@ page 50120 "TIP Chicken Card"
                 {
                     ToolTip = 'Specifies the value of the Chicken Type Description field.', Comment = '%';
                 }
+                field("Produced Eggs"; Rec."Produced Eggs")
+                {
+                    ToolTip = 'Specifies the value of the Produced Eggs field.', Comment = '%';
+                }
                 field("Last Date Modified"; Rec."Last Date Modified")
                 {
                     ToolTip = 'Specifies the value of the Last Date Modified field.', Comment = '%';

@@ -25,6 +25,10 @@ page 50121 "TIP Chicken List"
                 {
                     ToolTip = 'Specifies the value of the Gender field.', Comment = '%';
                 }
+                field("Produced Eggs"; Rec."Produced Eggs")
+                {
+                    ToolTip = 'Specifies the value of the Produced Eggs field.', Comment = '%';
+                }
             }
         }
         area(Factboxes)

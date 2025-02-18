@@ -1,6 +1,7 @@
 table 50127 "TIP Egg Production Line"
 {
     DataClassification = CustomerContent;
+    DrillDownPageId = "TIP Egg Production Lines";
 
     fields
     {
@@ -19,6 +20,7 @@ table 50127 "TIP Egg Production Line"
         {
             Caption = 'Chicken No.';
             DataClassification = CustomerContent;
+            TableRelation = "TIP Chicken";
         }
         field(4; "Chicken Name"; Text[100])
         {
