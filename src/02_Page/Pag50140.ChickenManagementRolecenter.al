@@ -8,11 +8,17 @@ page 50140 "Chicken Management Rolecenter"
         area(RoleCenter)
         {
             part(HeadLineOrderProcessor; "Headline RC Order Processor")
-            { }
+            {
+                ApplicationArea = All;
+            }
             part(OverdueCustomers; "Overdue Customers")
-            { }
+            {
+                ApplicationArea = All;
+            }
             part(O365Activities; "O365 Activities")
-            { }
+            {
+                ApplicationArea = All;
+            }
         }
     }
 
@@ -31,6 +37,8 @@ page 50140 "Chicken Management Rolecenter"
         {
             group(MasterData)
             {
+                Caption = 'Master Data';
+                Image = RegisteredDocs;
                 action(ChickenList)
                 {
                     Caption = 'Chickens';
