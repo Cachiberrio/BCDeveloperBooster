@@ -9,6 +9,10 @@ table 50100 "TIP Chicken"
         {
             DataClassification = CustomerContent;
             Caption = 'No.';
+            trigger OnValidate()
+            begin
+                CalcFields(ChickenTypeDescription);
+            end;
         }
         field(2; Description; Text[100])
         {
@@ -21,6 +25,14 @@ table 50100 "TIP Chicken"
             Caption = 'Chicken Type Code';
             TableRelation = "TIP Chicken Type";
         }
+        field(9; "ChickenTypeDescription"; Text[100])
+        {
+            Caption = 'Chicken Type Description';
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = lookup("TIP Chicken Type".Description where(Code = field(ChickenTypeCode)));
+        }
+
         field(4; BithDate; Date)
         {
             DataClassification = CustomerContent;
