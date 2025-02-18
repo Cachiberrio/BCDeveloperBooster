@@ -5,6 +5,8 @@ page 50128 "TIP Egg Production List"
     PageType = List;
     SourceTable = "TIP Egg Production Header";
     UsageCategory = Lists;
+    CardPageId = "TIP Egg Production Document";
+    Editable = false;
 
     layout
     {
